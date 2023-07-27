@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "461206504613",
+    "project_id": "photoscent-4484e",
+    "storage_bucket": "photoscent-4484e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:461206504613:android:ef6cf767eb61be7c8fb94c",
+        "android_client_info": {
+          "package_name": "com.example.photoscent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "461206504613-2qb28qqc99b0n0cak2u9hn43ns82s20d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-MUd0LwVNgWXlMdAAoluIrgCo9-LoU18"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "461206504613-2qb28qqc99b0n0cak2u9hn43ns82s20d.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "461206504613-cvshl87ebakk44aa57spjauie0e0sc5g.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.unhangedrush.photoscent"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
