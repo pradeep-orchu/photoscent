@@ -1,5 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:photoscent/screens/home_screen.dart';
 
 import 'firebase_options.dart';
 
@@ -21,9 +22,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Photoscent',
       theme: ThemeData(
-        useMaterial3: true,
-      ),
-      home: const MyHomePage(title: 'Photoscent Home Page'),
+          useMaterial3: true,
+          colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.grey)),
+      home: Scaffold(body: HomeScreen()),
     );
   }
 }
