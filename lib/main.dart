@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:photoscent/screens/home_screen.dart';
+import 'package:photoscent/screens/post_screen.dart';
 
 import 'firebase_options.dart';
 
@@ -24,7 +25,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
           useMaterial3: true,
           colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.grey)),
-      home: Scaffold(body: HomeScreen()),
+      routes: {
+        'home': (context) => HomeScreen(),
+        'post': (context) => PostScreen(),
+      },
+      initialRoute: 'home',
     );
   }
 }
