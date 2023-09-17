@@ -1,8 +1,5 @@
-import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:photoscent/components/home_grid.dart';
 import 'package:photoscent/components/post_card.dart';
 import 'package:photoscent/components/profile_card.dart';
@@ -25,8 +22,8 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                IconButton(onPressed: () {}, icon: Icon(Icons.menu)),
-                Row(
+                IconButton(onPressed: () {}, icon: const Icon(Icons.menu)),
+                const Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Icon(
@@ -37,8 +34,10 @@ class _HomeScreenState extends State<HomeScreen> {
                   ],
                 ),
                 IconButton(
-                    onPressed: () {},
-                    icon: Icon(
+                    onPressed: () {
+                      Navigator.pushNamed(context, 'notification');
+                    },
+                    icon: const Icon(
                       Icons.notifications_outlined,
                       //color: Theme.of(context).colorScheme.secondaryContainer,
                     )),
@@ -47,13 +46,13 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
         SliverToBoxAdapter(
-          child: Container(
+          child: SizedBox(
             //margin: EdgeInsets.only(left: 20),
             height: 140,
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemBuilder: (BuildContext context, int index) {
-                return ProfileCard();
+                return const ProfileCard();
               },
               itemCount: 5,
             ),
@@ -61,22 +60,22 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         SliverToBoxAdapter(
           child: Container(
-            padding: EdgeInsets.symmetric(horizontal: 20),
+            padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Text('Catagories',
                 style: Theme.of(context).textTheme.headlineSmall),
           ),
         ),
-        HomeGrid(),
+        const HomeGrid(),
         SliverToBoxAdapter(
           child: Container(
-            padding: EdgeInsets.symmetric(horizontal: 20),
+            padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Text('Most Saved',
                 style: Theme.of(context).textTheme.headlineSmall),
           ),
         ),
         SliverList(
             delegate: SliverChildBuilderDelegate((context, index) {
-          return PostCard();
+          return const PostCard();
         }, childCount: 5)),
       ]),
     );

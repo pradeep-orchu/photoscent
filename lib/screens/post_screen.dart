@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class PostScreen extends StatefulWidget {
   const PostScreen({super.key});
@@ -14,7 +12,7 @@ class _PostScreenState extends State<PostScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Post'),
+        title: const Text('Post'),
       ),
       body: SafeArea(
           child: SingleChildScrollView(
@@ -29,7 +27,7 @@ class _PostScreenState extends State<PostScreen> {
                     color: Theme.of(context).colorScheme.primaryContainer,
                     borderRadius: BorderRadius.circular(25)),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 5,
               ),
               Row(
@@ -37,10 +35,10 @@ class _PostScreenState extends State<PostScreen> {
                 children: [
                   Row(
                     children: [
-                      CircleAvatar(
+                      const CircleAvatar(
                         radius: 30,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 5,
                       ),
                       Column(
@@ -79,7 +77,7 @@ class _PostScreenState extends State<PostScreen> {
                           ))),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 5,
               ),
               Text(
@@ -90,36 +88,36 @@ class _PostScreenState extends State<PostScreen> {
                 children: [
                   FilledButton(
                     onPressed: () {},
-                    child: Text('Sky'),
+                    child: const Text('Sky'),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 5,
                   ),
                   TextButton(
                     onPressed: () {},
-                    child: Text('Sky'),
+                    child: const Text('Sky'),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 5,
                   ),
                   OutlinedButton(
                     onPressed: () {},
-                    child: Text('Sky'),
+                    child: const Text('Sky'),
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 5,
               ),
               Text(
                 'Description:',
                 style: Theme.of(context).textTheme.headlineSmall,
               ),
-              Text(
+              const Text(
                 "Instagram captions can say a lot about a person's personality. Here are some examples of Instagram captions:",
                 softWrap: true,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 5,
               ),
               Text(

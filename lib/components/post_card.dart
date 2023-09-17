@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
-import '../utils/post.dart';
 
 class PostCard extends StatefulWidget {
   // final Post post;
@@ -25,8 +22,8 @@ class _PostCardState extends State<PostCard> {
           children: [
             Row(
               children: [
-                CircleAvatar(),
-                SizedBox(
+                const CircleAvatar(),
+                const SizedBox(
                   width: 5,
                 ),
                 Column(
@@ -45,7 +42,7 @@ class _PostCardState extends State<PostCard> {
                 )
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 5,
             ),
             GestureDetector(
